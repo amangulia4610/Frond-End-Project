@@ -32,6 +32,10 @@ header {
     list-style-type: none;
     cursor: pointer;
   }
+  .team-members {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
 }
 
 /* Main Content Styles */
@@ -71,11 +75,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #212121;
 }
 
 .about-detail {
   flex-basis: 30%;
-  background: rgba(4, 4, 4, 0.8);
+  background: rgba(24, 24, 24, 0.8);
   border-radius: 10px;
   padding: 2vw;
   margin: 2vw;
@@ -107,13 +112,13 @@ header {
 
 .team-members {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .team-member {
   flex-basis: 30%;
-  background: rgba(4, 4, 4, 0.8);
+  background: rgba(24, 24, 24, 0.8);
   border-radius: 10px;
   padding: 2vw;
   margin: 2vw;
