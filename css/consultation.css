@@ -1,0 +1,102 @@
+@import url('/css/header_style.css');
+/* this is to change the color in header_style to 
+accomdate it for about page*/
+header {
+  background: #212121;
+}
+
+#menu-toggle {
+  background: #212121;
+}
+
+#mobile-nav ul {
+  background: #212121;
+}
+@media (min-width:1025px) {
+    #desktop-nav,#header-desktop-btn{
+      display: block;
+  }
+    #menu-toggle{
+        display: none;
+    }
+  nav ul{
+    display: flex;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    gap: 3vw;
+    font-weight: 600;
+  }
+     nav ul li{
+        list-style-type: none;
+        cursor: pointer;
+  }
+}
+main {
+    padding: 10vh 1rem;
+    text-align: center;
+}
+
+.consultation {
+    background: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+    max-width: 400px; /* added max-width to decrease the width */
+    margin: 50px auto; /* added margin to center the form */
+}
+
+.consultation h1 {
+    color: #0da34e;
+}
+
+.consultation-form {
+    width: 100%;
+}
+
+.consultation-form label, .consultation-form input, .consultation-form textarea, .consultation-form select {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.consultation-form input, .consultation-form textarea, .consultation-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333
+}
+
+.consultation-form select option {
+    color: #333; /* added to change text color of dropdown options to black */
+    background-color: #f0f0f0; /* added to change background color of dropdown options */
+}
+
+button {
+    background-color: #0da34e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0b8f45;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width:768px){
+    .consultation-form select{
+        width: auto;
+    }
+}

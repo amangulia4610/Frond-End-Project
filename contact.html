@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>Contact Us - SpaceWeb</title>
+    <script src="script.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="/img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Space Web</a></h1>
+
+      <nav id="mobile-nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Our Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li>
+            <a href="/contact.html"
+              ><button class="cta-header">
+                Book a Free Consultation ✏️
+              </button></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle">&#9776;</button>
+      <!-- Hamburger Icon, now visible on mobile -->
+
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Our Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="/consultation.html" id="header-desktop-btn"
+        ><button class="cta-header">Book a Free Consultation ✏️</button></a
+      >
+    </header>
+    <main>
+      <section class="contact-us">
+        <h1>Contact Us</h1>
+        <div class="contact-layout">
+          <div class="contact-details">
+            <p>Please feel free to reach out to us:</p>
+            <p style="padding: 0 20px">
+              <strong>Location:</strong>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80802.12523822035!2d-79.346555!3d43.78314975582326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sus!4v1722271829667!5m2!1sen!2sus"
+                class="map-iframe"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </p>
+            <p>
+              <strong>Hours of Operation:</strong> Monday - Friday, 9am - 5pm
+            </p>
+            <p><strong>Email:</strong> support@spaceweb.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+          </div>
+          <form action="/submit-form" method="POST" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LcV9RoqAAAAACtm2PMogAkZgKzP8HhCDeMUUK_D"
+            ></div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 SpaceWeb Tech Consultancy. All rights reserved.</p>
+    </footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>

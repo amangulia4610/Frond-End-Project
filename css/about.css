@@ -1,0 +1,224 @@
+@import url("/css/header_style.css");
+/* this is to change the color in header_style to 
+accomdate it for about page*/
+header {
+  background: #212121;
+}
+
+#menu-toggle {
+  background: #212121;
+}
+
+#mobile-nav ul {
+  background: #212121;
+}
+/* media query for the desktop */
+@media (min-width: 1025px) {
+  #desktop-nav,
+  #header-desktop-btn {
+    display: block;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    gap: 3vw;
+    font-weight: 600;
+  }
+  nav ul li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+}
+
+/* Main Content Styles */
+#page1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #212121; /* Changed to a solid color if no image */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page1 > h1 {
+  font-size: 3.5em;
+  line-height: 8vw;
+  font-weight: bold;
+  text-align: center;
+  color: #ddd;
+}
+
+#page1 > h1 span {
+  color: #0da34e;
+}
+
+#page1 > p {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 1vw;
+  font-size: 1.5em;
+  width: 80%;
+}
+
+/* About Details Section */
+.about-us {
+  padding: 5vw 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-detail {
+  flex-basis: 30%;
+  background: rgba(4, 4, 4, 0.8);
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 2vw;
+}
+
+.about-detail h2 {
+  font-size: 2em;
+  color: #0da34e;
+}
+
+.about-detail p,
+.about-detail ul {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+/* this is for team */
+.team {
+  padding: 5vw 10vw;
+  background-color: #212121;
+  color: #ddd;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5em;
+  color: #0da34e;
+  margin-bottom: 2vw;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team-member {
+  flex-basis: 30%;
+  background: rgba(4, 4, 4, 0.8);
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 2vw;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  /* border-radius: 50%; */
+  margin-bottom: 1vw;
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  color: #0da34e;
+  margin-bottom: 0.5vw;
+}
+
+.team-member p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.icons .fab {
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+/* Media Queries for Tablets */
+/* @media (min-width: 1024px) {
+  .team {
+    padding: 5vw 10vw;
+    background-color: #212121;
+    color: #ddd;
+    text-align: center;
+  }
+  .team-members {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .team-member {
+    flex-basis: 30%;
+    background: rgba(4, 4, 4, 0.8);
+    border-radius: 10px;
+    padding: 2vw;
+    margin: 2vw;
+    text-align: center;
+  }
+
+  .team h2 {
+    font-size: 2em;
+  }
+
+  .team-member img {
+    width: 60%;
+    margin-bottom: 1vw;
+  }
+
+  .team-member h3 {
+    font-size: 1.3em;
+  }
+
+  .team-member p {
+    font-size: 0.9em;
+  }
+} */
+
+/* Media Queries for Mobile */
+/* @media (min-width: 768px) {
+  .team-member {
+    flex-basis: 100%;
+  }
+
+  .team h2 {
+    font-size: 1.8em;
+  }
+
+  .team-member h3 {
+    font-size: 1.2em;
+  }
+
+  .team-member p {
+    font-size: 0.8em;
+  }
+
+  .team-member img {
+    width: 80%;
+    margin-bottom: 1vw;
+  }
+} */
