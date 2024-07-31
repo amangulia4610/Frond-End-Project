@@ -72,9 +72,13 @@ main {
     font-size: 1.5em;
     width: 80%;
 }
+.portfolio{
+    background-color: #212121;
+    padding-bottom: 10vh;
+}
 /* Portfolio Items - optimized for mobile */
 .portfolio-item {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(9, 9, 9, 0.8);
     margin: 10px 5px;
     padding: 10px;
     border-radius: 10px;

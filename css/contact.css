@@ -86,7 +86,8 @@ form textarea {
 form input,
 form textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000 !important;
+  color: #000 !important;
   border-radius: 4px;
 }
 

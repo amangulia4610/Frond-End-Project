@@ -1,7 +1,7 @@
 @import url('/css/header_style.css');
 /* this is to change the color in header_style to 
 accomdate it for about page*/
-header {
+header,.services {
   background: #212121;
 }
 
